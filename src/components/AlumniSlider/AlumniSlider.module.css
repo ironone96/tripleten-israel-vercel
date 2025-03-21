@@ -1,0 +1,414 @@
+.alumni {
+    margin-bottom: 72px;
+    overflow-x: hidden;
+}
+
+.orangeWrapper {
+    background-color: var(--orange-light);
+}
+
+.alumniHead {
+    max-width: 1158px;
+    margin: 0 auto;
+    border-radius: 8px 64px;
+    background-color: #f2f1ee;
+    padding: 74px 100px 158px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alumniHead h2 {
+    font-size: 72px;
+    font-weight: bold;
+    font-family: var(--font-family-gramatika);
+    line-height: 68px;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 840px;
+}
+
+.digit {
+    display: inline-block;
+    padding: 0 16px 4px 16px;
+    background-color: var(--orange-light);
+    border-radius: 16px;
+    border: solid #E96E3A;
+    border-width: 0 0 4px 4px;
+    rotate: -2deg;
+    box-shadow: 0px 16px 25px 0px rgba(255, 143, 96, 0.40);
+    margin-bottom: -10px;
+}
+
+.heart {
+    display: inline-block;
+    width: 88px;
+    height: 68px;
+    background-image: url("/images/Heart2.svg");
+    background-position: center;
+    background-size: cover;
+    vertical-align: bottom;
+}
+
+.alumniHead ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.alumniHead ul li {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    padding-left: 16px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.alumniHead ul li:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--black-90);
+    left: 0;
+    border-radius: 100%;
+}
+
+.alumniHead ul li:nth-child(2),
+.alumniHead ul li:nth-child(5) {
+    margin-top: 28px;
+}
+
+.alumniHead ul li:nth-child(3),
+.alumniHead ul li:nth-child(4) {
+    margin-top: 52px;
+}
+
+.swiperContainer {
+    max-width: 1156px;
+    margin: -108px auto 0;
+    position: relative;
+}
+
+.swiper {
+    overflow: visible;
+}
+
+.swiperSlide {
+    width: 376px;
+}
+
+.alumniItem {
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 32px 16px;
+    text-align: center;
+}
+
+.alumniItem h3 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.alumniItem img {
+    width: 196px;
+    height: 196px;
+    border-radius: 8px 64px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 16px;
+}
+
+.alumnusJob {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.alumnusJob p {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.clockIcon {
+    width: 24px;
+    height: 24px;
+    background-image: url("/icons/clockIcon.svg");
+    background-size: contain;
+}
+
+.starIcon {
+    width: 24px;
+    height: 24px;
+    background-image: url("/icons/starIcon.svg");
+    background-size: contain;
+}
+
+.oldJob {
+    opacity: .5;
+}
+
+.btnYoutube {
+    border: none;
+    outline: none;
+    background: var(--black-90);
+    color: #fff;
+    transition: background 200ms;
+    padding: 12px 56px;
+    border-radius: 16px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.btnYoutube:hover {
+    background: #000000;
+}
+
+.btnYoutube:after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.5098 4.89758C7.8432 4.50256 7 4.98302 7 5.75788V18.2479C7 19.0227 7.8432 19.5032 8.5098 19.1081L19.0483 12.8632C19.7019 12.4759 19.7019 11.5299 19.0483 11.1426L8.5098 4.89758Z" fill="%23F2F1EE"/></svg>');
+    background-size: contain;
+}
+
+.btnLinkedin {
+    padding: 8px 16px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--black-90);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btnLinkedin:before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('data:image/svg+xml,<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.3461 4.00049H5.65393C5.0166 4.00049 4.5 4.51709 4.5 5.15442V18.8466C4.5 19.4839 5.0166 20.0005 5.65393 20.0005H19.3461C19.9834 20.0005 20.5 19.4839 20.5 18.8466V5.15442C20.5 4.51709 19.9834 4.00049 19.3461 4.00049ZM10.1753 16.0942H8.22693V10.2325H10.1753V16.0942ZM9.20117 9.43213H9.18848C8.53467 9.43213 8.11182 8.98206 8.11182 8.41956C8.11182 7.84436 8.54761 7.40674 9.21411 7.40674C9.88062 7.40674 10.2908 7.84436 10.3035 8.41956C10.3035 8.98206 9.88062 9.43213 9.20117 9.43213ZM17.2007 16.0942H15.2526V12.9584C15.2526 12.1703 14.9705 11.6328 14.2655 11.6328C13.7273 11.6328 13.4067 11.9954 13.2659 12.3453C13.2144 12.4706 13.2018 12.6456 13.2018 12.8208V16.0942H11.2535C11.2535 16.0942 11.2791 10.7825 11.2535 10.2325H13.2018V11.0625C13.4607 10.6631 13.924 10.095 14.9576 10.095C16.2395 10.095 17.2007 10.9327 17.2007 12.7332V16.0942Z" fill="%231A1A1A"/></svg>');
+    background-size: contain;
+}
+
+.swiperNavigation {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    top: 108px;
+    left: 1132px;
+    z-index: 1;
+}
+
+.swiperNavigation button {
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0, 0.08);
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalOverlay {
+    position: fixed;
+    inset: 0px;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 9999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.modalContent {
+    inset: initial;
+    max-width: 960px;
+    width: 100%;
+    height: 540px;
+}
+
+.closeModal {
+    position: fixed;
+    top: 10px;
+    right: 27px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: opacity 300ms;
+}
+
+.closeModal:after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-image: url('data:image/svg+xml,<svg role="presentation" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="%23fff" fill-rule="evenodd"><rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect><rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect></g></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.closeModal:hover {
+    opacity: .7;
+}
+
+@media (max-width: 1279px) {
+    .alumni {
+        margin-bottom: 28px;
+    }
+
+    .alumniHead {
+        max-width: 768px;
+        padding: 68px 128px 0;
+        border-radius: 8px 64px 0 0;
+    }
+
+    .orangeWrapper {
+        padding: 0 20px;
+    }
+
+    .alumniHead ul {
+        display: none;
+    }
+
+    .swiperContainer {
+        margin: 0 auto;
+        max-width: 736px;
+        padding: 48px 20px 0;
+    }
+
+    .swiperSlide {
+        width: 360px;
+    }
+
+    .alumniItem {
+        padding: 24px 28px 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .alumni {
+        margin-bottom: 60px;
+    }
+
+    .orangeWrapper {
+        padding: 0 16px;
+    }
+
+    .alumniHead {
+        max-width: none;
+        padding: 68px 12px 0;
+    }
+
+    .alumniHead h2 {
+        font-size: 48px;
+        line-height: 1;
+        max-width: 290px;
+    }
+
+    .heart {
+        width: 60px;
+        height: 48px;
+        margin-right: -16px;
+    }
+
+    .digit {
+        padding: 4px 12px 0;
+        border-width: 0 0 5px 5px;
+    }
+
+    .swiperContainer {
+        max-width: 328px;
+        padding: 40px 16px 0;
+    }
+
+    .swiperSlide {
+        max-width: 328px;
+        width: 100%;
+    }
+
+    .alumniItem {
+        padding: 24px 32px 60px;
+    }
+
+    .alumniItem h3 {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .alumniItem img {
+        width: 134px;
+        height: 134px;
+        margin-bottom: 24px;
+        border-radius: 8px 44px;
+    }
+
+    .alumnusJob p {
+        font-size: 14px;
+        line-height: 18px;
+        width: 49%;
+        margin-bottom: 22px;
+    }
+
+    .clockIcon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .starIcon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .btnYoutube {
+        padding: 10px 20px;
+        border-radius: 10px;
+        gap: 4px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .btnYoutube:after {
+        width: 20px;
+        height: 20px;
+    }
+
+    .btnLinkedin {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .btnLinkedin:after {
+        width: 20px;
+        height: 20px;
+    }
+}

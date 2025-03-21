@@ -1,0 +1,100 @@
+.HiringStats {
+    margin-bottom: 120px;
+}
+
+.container {
+    max-width: 1192px;
+    margin: 0 auto;
+}
+
+.hiringStats {
+    position: relative;
+    width: 100%;
+    height: 382px;
+    display: flex;
+    justify-content: center;
+}
+
+.statsText {
+    margin-top: 92px;
+    z-index: 2;
+    max-width: 442px;
+    text-align: center;
+}
+
+.percent {
+    font-size: 120px;
+    line-height: 112px;
+    font-weight: 600;
+    font-family: var(--font-family-gramatika);
+    margin-bottom: 4px;
+}
+
+p {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.avatarContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+@media (max-width: 1279px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .hiringStats {
+        height: 344px;
+    }
+
+    .statsText {
+        margin-top: 100px;
+    }
+
+    .percent {
+        font-size: 88px;
+        line-height: 80px;
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 767px) {
+    .HiringStats {
+        margin-bottom: 90px;
+    }
+
+    .container {
+        max-width: 390px;
+    }
+
+    .hiringStats {
+        height: 300px;
+    }
+
+    .avatar{
+        height: 34px;
+        width: 34px;
+    }
+
+    .statsText {
+        margin-top: 86px;
+        max-width: 240px;
+    }
+
+    .avatarContainer{
+        width: 390px;
+    }
+}

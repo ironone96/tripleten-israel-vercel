@@ -1,0 +1,274 @@
+.career{
+    margin-bottom: 120px;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.careerHead{
+    max-width: 764px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+.careerHead h2 {
+    font-size: 72px;
+    font-weight: bold;
+    font-family: var(--font-family-gramatika);
+    line-height: 68px;
+    margin-bottom: 28px;
+}
+
+.careerHead p {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.careerBody{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 38px 36px;
+}
+
+.careerItem{
+    padding: 16px 22px 28px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.careerItem:after{
+    content: "";
+    background-size: contain;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+}
+
+.careerItem:first-child:after{
+    width: 258px;
+    height: 156px;
+    background-image: url("/images/carrerItem1.jpg");
+    top: 0;
+    right: -66px;
+}
+
+.careerItem:nth-child(2):after{
+    width: 258px;
+    height: 156px;
+    background-image: url("/images/carrerItem2.jpg");
+    top: 0;
+    right: -28px;
+}
+
+.careerItem:nth-child(3):after{
+    width: 366px;
+    height: 366px;
+    background-image: url("/images/carrerItem3.png");
+    top: -37px;
+    right: -72px;
+}
+
+.careerItem:last-child:after{
+    width: 248px;
+    height: 171px;
+    background-image: url("/images/carrerItem4.jpg");
+    top: 0;
+    right: 0;
+}
+
+.careerItem h3{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: var(--font-family-gramatika);
+    line-height: 1;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.careerItem p{
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 500;
+}
+
+.skillset{
+    margin-top: 54px;
+    max-width: 294px;
+}
+
+p.skillsetList{
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.careerItemOrange{
+    background-color: var(--orange-light);
+}
+
+.careerBtn{
+    display: inline-flex;
+    align-items: center;
+    height: 48px;
+    padding: 0 82px;
+    background-color: var(--black-90);
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 200ms;
+    margin-top: auto;
+}
+
+.careerBtn:hover{
+    background-color: #000000;
+}
+
+@media (max-width: 1279px){
+    .career{
+        margin-bottom: 156px;
+    }
+    .careerHead{
+        max-width: 640px;
+        margin-bottom: 60px;
+    }
+
+    .careerBody{
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        max-width: 620px;
+        margin: 0 auto;
+    }
+
+    .careerItem{
+        padding: 16px 30px 18px;
+    }
+
+    .careerItem h3{
+        margin-bottom: 42px;
+    }
+
+    .skillset{
+        margin-top: 76px;
+        max-width: 320px;
+    }
+
+    .skillsetList{
+        line-height: 24px;
+        letter-spacing: -0.5px;
+    }
+
+    .careerItem:first-child:after{
+        right: -10px;
+    }
+
+    .careerItem:nth-child(2):after{
+        right: 8px;
+    }
+
+    .careerItem:last-child:after{
+        right: 26px;
+    }
+
+    .careerItemOrange{
+        grid-row: 4/5;
+        min-height: 362px;
+    }
+
+    .careerItem:nth-child(3):after{
+        top: -78px;
+        right: -66px;
+    }
+} 
+
+@media (max-width: 767px){
+    .career{
+        margin-bottom: 72px;
+    }
+
+    .careerHead{
+        max-width: 294px;
+        margin-bottom: 48px;
+    }
+
+    .careerHead h2{
+        font-size: 48px;
+        line-height: 44px;
+        margin-bottom: 24px;
+    }
+
+    .careerHead p{
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0;
+    }
+
+    .careerBody{
+        max-width: none;
+        row-gap: 10px;
+        padding: 0 16px;
+    }
+
+    .careerItem{
+        padding: 200px 28px 54px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .careerItem h3{
+        font-size: 32px;
+        line-height: 1;
+        margin-bottom: 24px;
+    }
+
+    .skillset{
+        margin-top: 24px;
+
+    }
+
+    .skillsetList{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .careerItem:first-child:after{
+        right: 50%;
+        transform: translateX(66%);
+    }
+
+    .careerItem:nth-child(2):after{
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .careerItem:last-child:after{
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .careerItemOrange{
+        grid-row: 4/5;
+        min-height: 370px;
+        padding-bottom: 34px;
+    }
+
+    .careerItem:nth-child(3):after{
+        width: 278px;
+        height: 278px;
+        top: -72px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}

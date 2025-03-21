@@ -1,0 +1,79 @@
+@font-face {
+	font-family: SuisseIntl;
+	font-style: normal;
+	font-weight: 600;
+	src:
+		url('/fonts/SuisseIntl-Bold.woff2') format('woff2'),
+		url('/fonts/SuisseIntl-Bold.otf') format('opentype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: SuisseIntl;
+	font-style: normal;
+	font-weight: 500;
+	src:
+		url('/fonts/SuisseIntl-Medium.woff2') format('woff2'),
+		url('/fonts/SuisseIntl-Medium.ttf') format('truetype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: SuisseIntl;
+	font-style: normal;
+	font-weight: 400;
+	src:
+		url('/fonts/suisseintl-regular_0.woff2') format('woff2'),
+		url('/fonts/suisseintl-regular_0.otf') format('opentype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Gramatika;
+	font-style: normal;
+	font-weight: 700;
+	src:
+		url('/fonts/Gramatika-Bold.woff2') format('woff2'),
+		url('/fonts/Gramatika-Bold.otf') format('opentype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Gramatika;
+	font-style: normal;
+	font-weight: 500;
+	src:
+		url('/fonts/Gramatika-Regular.woff2') format('woff2'),
+		url('/fonts/Gramatika-Regular.otf') format('opentype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Suisse Intl';
+	font-style: normal;
+	font-weight: 600;
+	src:
+		url('/fonts/SuisseIntl-Bold.woff2') format('woff2'),
+		url('/fonts/SuisseIntl-Bold.otf') format('opentype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Suisse Intl';
+	font-style: normal;
+	font-weight: 500;
+	src:
+		url('/fonts/SuisseIntl-Medium.woff2') format('woff2'),
+		url('/fonts/SuisseIntl-Medium.ttf') format('truetype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Suisse Intl';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		url('/fonts/suisseintl-regular_0.woff2') format('woff2'),
+		url('/fonts/suisseintl-regular_0.otf') format('opentype');
+	font-display: swap;
+}

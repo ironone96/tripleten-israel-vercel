@@ -1,0 +1,13 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+
+:root {
+	--orange-light: #ff976b;
+	--black-90: #1a1a1a;
+	--font-family-suisse: suisseintl, sans-serif;
+	--font-family-gramatika: Gramatika, sans-serif;
+
+	font-family: var(--font-family-suisse);
+	color: var(--black-90);
+	background: #f2f1ee;
+}

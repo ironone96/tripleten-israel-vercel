@@ -8,6 +8,7 @@ const hreflangUrls = {
   "en-us": "/",
 };
 
+import Header from "../components/Header.jsx";
 import Hero from "../components/Hero/Hero.jsx";
 import AlumniSlider from "../components/AlumniSlider/AlumniSlider.jsx";
 import HiringStats from "../components/HiringStats/HiringStats.jsx";
@@ -56,42 +57,10 @@ import "../assets/main.css";
       type="image/svg+xml"
       href={import.meta.env.BASE_URL + "favIcon.ico"}
     />
-    <style>
-      #header {
-        height: 66px;
-        background-color: var(--orange-light);
-      }
-    </style>
-    <script type="module" src="/js/israel-wa-widget.js"></script>
-    <script
-      is:inline
-      type="text/javascript"
-      src="/js/israel-landing-header.js"
-      onload=""></script>
-
-    <script>
-      // @ts-ignore
-      const waWidget = mountWaWidget("#wa-widget", { fixed: true });
-      // @ts-ignore
-      mountHeader("#header", "israel", {
-        disableBottomPanel: true,
-        hideMenu: true,
-        tool: "eye",
-        onToolClick: () => waWidget.open(),
-        actionButton: {
-          title: "Explore",
-          tagName: "a",
-          href: "https://tripleten.com/",
-          className: "custom-action-button",
-          newTab: true,
-        },
-      });
-    </script>
   </head>
   <body>
     <div class="page-body">
-      <div id="header"></div>
-      <div id="wa-widget" data-v-app=""></div>
+      <Header client:load />
       <Hero />
       <AlumniSlider client:load />
       <HiringStats client:load />

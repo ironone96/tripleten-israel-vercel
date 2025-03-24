@@ -11,3 +11,15 @@
 	color: var(--black-90);
 	background: #f2f1ee;
 }
+
+@media (max-width: 767px) {
+    #wa-widget .a11y-widget{
+		height: 100dvh;
+	}
+}
+
+@media (max-width: 370px) {
+    #header .header__tool-button {
+        display: block;
+    }
+}

@@ -84,7 +84,7 @@ export default function HiringStats() {
             <div className={styles.container}>
                 <div className={styles.hiringStats}>
                     <div className={styles.statsText}>
-                        <span className={styles.percent}>87%</span>
+                        <span className={styles.percent}>82%</span>
                         <p>of our grads get hired within 6 months of completing our program</p>
                     </div>
                     <div className={styles.avatarContainer}>

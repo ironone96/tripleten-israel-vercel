@@ -11,7 +11,7 @@ export default function Career() {
                 </div>
                 <div className={styles.careerBody}>
                     <div className={styles.careerItem}>
-                        <h3>Full Stack Developer<br></br>Bootcamp</h3>
+                        <h3>Full Stack Developer<br></br> Bootcamp</h3>
                         <p>10 months</p>
                         <div className={styles.skillset}>
                             <p>Skillset</p>
@@ -19,7 +19,7 @@ export default function Career() {
                         </div>
                     </div>
                     <div className={styles.careerItem}>
-                        <h3>Data Analyst<br></br>Bootcamp</h3>
+                        <h3>Data Analyst<br></br> Bootcamp</h3>
                         <p>7 months</p>
                         <div className={styles.skillset}>
                             <p>Skillset</p>
@@ -27,11 +27,11 @@ export default function Career() {
                         </div>
                     </div>
                     <div className={`${styles.careerItem} ${styles.careerItemOrange}`}>
-                        <h3>Not sure?<br></br>Find your path!</h3>
+                        <h3>Not sure?<br></br> Find your path!</h3>
                         <a className={styles.careerBtn} href="https://tripleten.com/" target="_blank">Explore →</a>
                     </div>
                     <div className={styles.careerItem}>
-                        <h3>QA Tester<br></br>Bootcamp</h3>
+                        <h3>QA Tester<br></br> Bootcamp</h3>
                         <p>5 months</p>
                         <div className={styles.skillset}>
                             <p>Skillset</p>

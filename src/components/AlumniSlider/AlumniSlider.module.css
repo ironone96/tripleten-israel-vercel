@@ -157,8 +157,8 @@
     background-size: contain;
 }
 
-.oldJob {
-    opacity: .5;
+.oldJob{
+    color: rgb(0, 0, 0, 0.5)
 }
 
 .btnYoutube {
@@ -168,7 +168,7 @@
     color: #fff;
     transition: background 200ms;
     padding: 12px 56px;
-    border-radius: 16px;
+    border-radius: 12px;
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
@@ -177,6 +177,7 @@
     align-items: center;
     gap: 8px;
     margin-bottom: 4px;
+    font-family: var(--font-family-suisse);
 }
 
 .btnYoutube:hover {
@@ -313,6 +314,10 @@
     .alumniItem {
         padding: 24px 28px 16px;
     }
+
+    .btnYoutube{
+        border-radius: 10px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -391,7 +396,6 @@
 
     .btnYoutube {
         padding: 10px 20px;
-        border-radius: 10px;
         gap: 4px;
         font-size: 12px;
         line-height: 14px;

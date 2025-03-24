@@ -26,7 +26,7 @@ src/
 public/
   js/
     israel-landing-header.js  # Header script
-    israel-wa-widget.js       # WhatsApp widget script
+    israel-wa-widget.js       # WA widget script
   images/             # Static images
 
 astro.config.mjs

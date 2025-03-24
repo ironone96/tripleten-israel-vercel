@@ -1,20 +1,65 @@
-### Deployment Instructions for Astro Project
+# 🇮🇱 TripleTen IL — Astro/React Project
 
-To deploy your Astro project, follow these steps:
+This project is a **rebuild** of the legacy page [tripleten.co.il](https://tripleten.co.il/), developed using **Astro** and **React components**.
 
-1. **Build Project:**
+The page is component-based, supports modular styling, and includes external JS-based header and WA widgets.
 
-   Create .env file with PUBLIC_SITE_URL
+---
 
-   Run the following command to build your project:
+## 🚀 Tech Stack
 
-   ```bash
-   npm i
-   npm run build
-   ```
+- ⚡ [Astro](https://astro.build/) — static site generator
+- ⚛ [React](https://reactjs.org/) — component-based UI
+- 🧠 [TypeScript](https://www.typescriptlang.org/) — type safety
+- 🎨 CSS Modules — scoped styling per component
+- 🌀 [SwiperJS](https://swiperjs.com/react) — interactive sliders
 
-2. **Accessing Static Files:**
-   After running the build command, navigate to the `dist` directory. Here, you will find all the static files ready for deployment.
+---
 
-3. **Setting Base URL:**
-   If you need to set a base URL for your project, you can do so by configuring it in your Astro project. Refer to the [Astro documentation](https://docs.astro.build/ru/guides/environment-variables/) for detailed instructions on how to set the base URL and its purpose.
+## 📂 Project Structure
+
+```text
+src/
+  components/         # React components (Hero, Slider, etc.)
+  pages/index.astro   # Main page layout
+
+public/
+  js/
+    israel-landing-header.js  # Header script
+    israel-wa-widget.js       # WhatsApp widget script
+  images/             # Static images
+
+astro.config.mjs
+tsconfig.json
+package.json
+```
+
+## 🧩 Embedded JS Widgets
+
+### 1. 🧭 Header (`public/js/israel-landing-header.js`)
+
+Integrated via `mountHeader`:
+
+```js
+mountHeader("#header", "israel", {
+   disableBottomPanel: true,
+   hideMenu: true,
+   tool: "eye",
+   onToolClick: () => waWidget.open(),
+   actionButton: {
+      title: "Explore",
+      tagName: "a",
+      href: "https://tripleten.com/",
+      className: "custom-action-button",
+      newTab: true,
+   },
+});
+```
+
+### 2. 🧭 WA Widget (`public/js/israel-wa-widget.js`)
+
+Integrated via `mountHeader`:
+
+```js
+const waWidget = mountWaWidget("#wa-widget", { fixed: true });
+```

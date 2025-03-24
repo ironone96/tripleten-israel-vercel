@@ -58,7 +58,7 @@ mountHeader("#header", "israel", {
 
 ### 2. 🧭 WA Widget (`public/js/israel-wa-widget.js`)
 
-Integrated via `mountHeader`:
+Integrated via `mountWaWidget`:
 
 ```js
 const waWidget = mountWaWidget("#wa-widget", { fixed: true });
